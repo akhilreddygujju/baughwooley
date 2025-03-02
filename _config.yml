@@ -1,5 +1,5 @@
-title: 2-bit Baugh-Wooley Multiplier
-#logo: headshot.jpg
-#Description of the text below
-#show downloads: true
-theme: jekyll-theme-minimal
+title: 2-bit Baugh-Wooley Signed Multiplier
+# logo: headshot.jpg # Uncomment and replace with your logo if you have one
+description: "Design and simulation of a 2-bit Baugh-Wooley signed multiplier using MAGIC and NGspice."
+# show_downloads: true # Uncomment if you want to show downloads
+theme: jekyll-theme-hacker # Or your preferred theme (e.g., jekyll-theme-documentation)
