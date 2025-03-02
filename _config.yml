@@ -1,3 +1,3 @@
 title: 2-bit Baugh-Wooley Signed Multiplier
 description: "VLSI design and simulation of a 2-bit Baugh-Wooley signed multiplier using MAGIC and NGspice. Project completed as part of ECE 420."
-theme: " jekyll-theme-Minima "
+theme: jekyll-theme-Minimal
