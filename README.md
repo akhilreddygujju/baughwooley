@@ -1,4 +1,4 @@
-# ![2-bit Baugh-Wooley Signed Multiplier: VLSI Design and Simulation](layout.png)
+# ![2-bit Baugh-Wooley Signed Multiplier: VLSI Design and Simulation](/images/layout.png)
 
 ## Overview
 
@@ -18,18 +18,18 @@ This project presents the design and simulation of a 2-bit Baugh-Wooley signed m
 
 * **Basic Cells:**
     * 1-bit Full Adder (FA): Implemented to perform the addition of three 1-bit binary numbers.
-        ![Full Adder Layout](famagic.jpg)
+        ![Full Adder Layout](/images/famagic.jpg)
     * 2-input NAND Gate: A fundamental logic gate used in the design.
-        ![NAND Gate Layout](nandmagic.png)
+        ![NAND Gate Layout](/images/nandmagic.png)
     * 2-input AND Gate: Another essential logic gate used in the design.
-        ![AND Gate Layout](andmagic.png)
+        ![AND Gate Layout](/images/andmagic.png)
 * **Complex Adder Cells:**
     * CSA-W (Carry Save Adder - White): A specific configuration of adder cells for efficient carry propagation.
-        ![CSA-W Layout](csaw magic.png)
+        ![CSA-W Layout](/images/csaw magic.png)
     * CSA-G (Carry Save Adder - Grey): Another configuration of adder cells optimized for performance.
-        ![CSA-G Layout](csa g magic.png)
+        ![CSA-G Layout](/images/csa g magic.png)
 * **2-bit Baugh-Wooley Signed Multiplier:** The final implementation using the hierarchical combination of the above cells and flip-flops from DE-5.
-    ![Multiplier Layout](mulmagic.png)
+    ![Multiplier Layout](/images/mulmagic.png)
 
 ## Simulation Results
 
@@ -37,7 +37,7 @@ This project presents the design and simulation of a 2-bit Baugh-Wooley signed m
    
 * **Performance Metrics:**
     * Maximum clock frequency: 0.24 GHz, determined through critical path analysis.
-        ![Critical Path](critical path.png)
+        ![Critical Path](/images/critical path.png)
 
 ## Usage
 
