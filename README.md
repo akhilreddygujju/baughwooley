@@ -49,4 +49,4 @@ This project was completed as part of the ECE 420 course at the University at Al
 
 ## Contact
 
-For any questions or further information, please contact [Your Email Address].
+For any questions or further information, please contact akhilreddy1607@gmail.com.
