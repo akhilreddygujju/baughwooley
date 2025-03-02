@@ -1,4 +1,4 @@
-# 2-bit Baugh-Wooley Signed Multiplier: VLSI Design and Simulation  ![Simulation Results](layout.png)
+# 2-bit Baugh-Wooley Signed Multiplier: VLSI Design and Simulation  !(layout.png)
 
 ## Overview
 
