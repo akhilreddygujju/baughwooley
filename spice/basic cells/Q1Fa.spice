@@ -1,0 +1,103 @@
+* SPICE3 file created from FA.ext - technology: scmos
+.include bsim.txt
+.option scale=0.09u
+
+VDD vdd 0 dc 1.8
+Vin_1 A 0 dc 1 pulse (0 1.8 190p 10p 10p 190p 400p)
+Vin_2 B 0 dc 1 pulse (0 1.8 190p 10p 10p 190p 400p)
+Vin_3 cin 0 dc 1 pulse (0 1.8 190p 10p 10p 190p 400p)
+
+
+M1000 out_AND2 a_218_113# vdd Vdd pfet w=8 l=2
++  ad=48 pd=28 as=672 ps=400
+M1001 sum out_AND1 vdd Vdd pfet w=8 l=2
++  ad=176 pd=96 as=0 ps=0
+M1002 a_267_63# sum vdd Vdd pfet w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1003 out_AND2 cin a_221_17# Gnd nfet w=8 l=2
++  ad=40 pd=26 as=48 ps=28
+M1004 gnd sum out_OR Gnd nfet w=8 l=2
++  ad=460 pd=334 as=48 ps=28
+M1005 cout out_OR gnd Gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1006 sum out_AND2 vdd Vdd pfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1007 a_59_17# not1_2 out_XOR1 Gnd nfet w=8 l=2
++  ad=48 pd=28 as=48 ps=28
+M1008 vdd B out_AND1 Vdd pfet w=8 l=2
++  ad=0 pd=0 as=48 ps=28
+M1009 a_140_17# not2_2 sum Gnd nfet w=8 l=2
++  ad=48 pd=28 as=88 ps=64
+M1010 out_XOR1 not1_2 a_36_55# Vdd pfet w=16 l=2
++  ad=96 pd=44 as=256 ps=128
+M1011 not1_2 B gnd Gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1012 not2_1 out_XOR1 gnd Gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1013 sum not2_2 a_117_55# Vdd pfet w=16 l=2
++  ad=0 pd=0 as=256 ps=128
+M1014 not2_2 a_103_n3# gnd Gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1015 a_43_17# A gnd Gnd nfet w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1016 vdd cin out_AND2 Vdd pfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1017 out_OR sum a_267_63# Vdd pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1018 not1_1 A gnd Gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1019 cout out_OR vdd Vdd pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1020 a_124_17# out_XOR1 gnd Gnd nfet w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1021 vdd A a_36_55# Vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1022 vdd out_XOR1 a_117_55# Vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1023 a_170_17# A gnd Gnd nfet w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1024 gnd not1_1 a_59_17# Gnd nfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1025 not1_2 B vdd Vdd pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1026 not2_1 out_XOR1 vdd Vdd pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1027 gnd not2_1 a_140_17# Gnd nfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1028 sum out_AND1 gnd Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1029 a_221_17# a_218_113# gnd Gnd nfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1030 out_OR sum gnd Gnd nfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1031 a_36_55# not1_1 out_XOR1 Vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1032 not2_2 a_103_n3# vdd Vdd pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1033 a_117_55# not2_1 sum Vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1034 not1_1 A vdd Vdd pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1035 sum out_AND2 gnd Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1036 out_XOR1 B a_43_17# Gnd nfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1037 out_AND1 A vdd Vdd pfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1038 sum a_103_n3# a_124_17# Gnd nfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1039 out_AND1 B a_170_17# Gnd nfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1040 a_36_55# B vdd Vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1041 a_117_55# a_103_n3# vdd Vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+
+
+.tran 1p 2n
+.control
+run
+set xbrushwidth = 2
+plot A B+2 cin+4 sum+6 cout+8
+.endc
+.end

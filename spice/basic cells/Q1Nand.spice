@@ -1,0 +1,24 @@
+* SPICE3 file created from NAND.ext - technology: scmos
+
+.include bsim.txt
+.option scale=0.09u
+VDD vdd 0 DC 1.8
+VA A 0 dc 1 pulse (0 1.8 190p 10p 10p 190p 400p)
+VB B 0 dc 1 pulse (0 1.8 190p 10p 10p 190p 400p)
+M1000 vout A vdd Vdd pfet w=8 l=2
++  ad=48 pd=28 as=80 ps=52
+M1001 vdd B vout Vdd pfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1002 vout B a_7_9# Gnd nfet w=8 l=2
++  ad=40 pd=26 as=48 ps=28
+M1003 a_7_9# A Gnd Gnd nfet w=8 l=2
++  ad=0 pd=0 as=40 ps=26
+.tran 1p 2n
+
+.control
+run
+set xbrushwidth = 2
+plot A B+2 vout+4
+.endc
+.end
+

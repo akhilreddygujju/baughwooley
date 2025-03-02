@@ -1,0 +1,117 @@
+* SPICE3 file created from CSA-W.ext - technology: scmos
+.include bsim.txt
+.option scale=0.09u
+
+VDD vdd 0 dc 1.8
+
+Vin_1 X 0 dc 1 pulse (0 1.8 190p 10p 10p 1000p 2000p)
+Vin_2 Y 0 dc 1 pulse (0 1.8 190p 10p 10p 1000p 2000p)
+Vin_3 B 0 dc 1 pulse (0 1.8 190p 10p 10p 1000p 2000p)
+Vin_4 C 0 dc 1 pulse (0 1.8 190p 10p 10p 1000p 2000p)
+
+M1000 VDD B a_79_89# Vdd pfet w=8 l=2
++  ad=872 pd=498 as=48 ps=28
+M1001 GND a_105_25# a_261_26# Gnd nfet w=8 l=2
++  ad=564 pd=390 as=48 ps=28
+M1002 a_105_25# a_79_89# VDD Vdd pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1003 a_79_25# A GND Gnd nfet w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1004 carry a_261_26# VDD Vdd pfet w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1005 a_208_89# C a_208_25# Gnd nfet w=8 l=2
++  ad=56 pd=30 as=48 ps=28
+M1006 a_n52_73# X VDD Vdd pfet w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1007 GND a_133_25# a_181_25# Gnd nfet w=8 l=2
++  ad=0 pd=0 as=48 ps=28
+M1008 a_149_25# C GND Gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1009 a_158_81# a_133_25# sum Vdd pfet w=16 l=2
++  ad=256 pd=128 as=96 ps=44
+M1010 a_234_25# a_208_89# GND Gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1011 a_4_25# A GND Gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1012 a_52_25# a_20_25# a_44_25# Gnd nfet w=8 l=2
++  ad=48 pd=28 as=48 ps=28
+M1013 a_208_89# a_44_25# VDD Vdd pfet w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1014 sum C a_165_25# Gnd nfet w=8 l=2
++  ad=48 pd=28 as=48 ps=28
+M1015 a_133_25# a_44_25# GND Gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1016 a_20_25# B VDD Vdd pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1017 a_44_25# a_20_25# a_29_81# Vdd pfet w=16 l=2
++  ad=96 pd=44 as=256 ps=128
+M1018 a_158_81# C VDD Vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1019 a_79_89# B a_79_25# Gnd nfet w=8 l=2
++  ad=56 pd=30 as=0 ps=0
+M1020 a_n52_73# Y a_n52_39# Gnd nfet w=8 l=2
++  ad=40 pd=26 as=48 ps=28
+M1021 a_105_25# a_79_89# GND Gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1022 carry a_261_26# GND Gnd nfet w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1023 a_36_25# A GND Gnd nfet w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1024 a_261_89# a_234_25# VDD Vdd pfet w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1025 VDD A a_29_81# Vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1026 a_79_89# A VDD Vdd pfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1027 a_261_26# a_234_25# GND Gnd nfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1028 A a_n52_73# GND Gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1029 VDD C a_208_89# Vdd pfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1030 a_208_25# a_44_25# GND Gnd nfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1031 VDD Y a_n52_73# Vdd pfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1032 a_149_25# C VDD Vdd pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1033 GND a_4_25# a_52_25# Gnd nfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1034 a_181_25# a_149_25# sum Gnd nfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1035 a_20_25# B GND Gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1036 a_29_81# a_4_25# a_44_25# Vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1037 sum a_149_25# a_158_81# Vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1038 a_234_25# a_208_89# VDD Vdd pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1039 a_4_25# A VDD Vdd pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1040 a_n52_39# X GND Gnd nfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1041 a_133_25# a_44_25# VDD Vdd pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1042 a_44_25# B a_36_25# Gnd nfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1043 a_261_26# a_105_25# a_261_89# Vdd pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1044 a_165_25# a_44_25# GND Gnd nfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1045 A a_n52_73# VDD Vdd pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1046 a_29_81# B VDD Vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+M1047 VDD a_44_25# a_158_81# Vdd pfet w=16 l=2
++  ad=0 pd=0 as=0 ps=0
+
+
+
+.tran 1p 2n
+.control
+run
+set xbrushwidth = 2
+plot X Y+2 A+4 B+6 C+8 Sum+10 carry+12
+.endc
+.end
