@@ -1,17 +1,3 @@
 title: 2-bit Baugh-Wooley Signed Multiplier
 description: "VLSI design and simulation of a 2-bit Baugh-Wooley signed multiplier using MAGIC and NGspice. Project completed as part of ECE 420."
-theme: jekyll-theme-documentation # Or your preferred formal theme
-# logo: /path/to/your/logo.png # Uncomment and set path if you have a logo
-# show_downloads: true # Uncomment if you want to show download links
-
-# Optional: Configure navigation (if your theme supports it)
-# nav:
-#   - title: Home
-#     url: /
-#   - title: Documentation
-#     url: /docs/README.md # Adjust path if needed
-#   - title: GitHub
-#     url: https://github.com/akhilreddygujju/baughwooley
-
-# Optional: Configure Google Analytics (if needed)
-# google_analytics: UA-XXXXXXXXX-Y
+theme: jekyll-scholar
